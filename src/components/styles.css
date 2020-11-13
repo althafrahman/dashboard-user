@@ -1,0 +1,351 @@
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap');
+
+/* @author Althaf M A */
+/* Date : 10/11/2020 */
+
+/* Common styling */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Styling body background */
+body{
+   background-color: #f3f5f9;
+}
+
+/* Styling wrapper conatins sidebar and main_content */
+.wrapper{
+  display: flex;
+  position: relative;
+}
+
+.main-contents{
+    height: 100%;
+    margin: 30px 50px;
+}
+
+.wrapper .sidebar{
+  width: 200px;
+  height: 100%;
+  background: #3a3047;
+  padding: 30px 0px;
+  position: fixed;
+}
+
+.wrapper .sidebar h5{
+  color: #fff;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.wrapper .sidebar ul li{
+  padding: 15px;
+}    
+
+.wrapper .sidebar ul li a{
+  color: #bdb8d7;
+  display: block;
+  text-decoration: none !important;
+  font-size: 12px;
+}
+
+.wrapper .sidebar ul li a .fa{
+  width: 20px;
+}
+
+.wrapper .sidebar ul li:hover{
+  background-color: #594f8d;
+}
+    
+.wrapper .sidebar ul li:hover a{
+  color: #fff;
+}
+ 
+.wrapper .main_content{
+  width: 100%;
+  height: 100vh;
+  margin-left: 180px;
+    overflow-x: hidden;
+  background-color: #e8ebed;
+  border-top-left-radius: 25px;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  position: relative;
+}
+
+.wrapper .main_content .header{
+  padding: 5px;
+  background: #fff;
+  color: #717171;
+  border-bottom: 1px solid #e0e4e8;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+}
+
+.wrapper .main_content .info{
+  margin: 20px;
+  color: #717171;
+  line-height: 25px;
+}
+
+.wrapper .main_content .info div{
+  margin-bottom: 20px;
+}
+/* Styling wrapper Ends here */
+
+/* Give some margin to cols class */
+.cols{
+  margin-bottom: 10px;
+  
+}
+
+/* Style to video div */
+.prd-vid{
+  color: #808080;
+}
+
+.videoInsert {
+  width : 100%;
+}
+
+/* styling texts in dashboard */
+.name-head{
+  margin-top: 10px;
+}
+
+.states{
+  color : #808080
+}
+
+/* Styling card headers and body */
+
+.card-header{
+  background-color: #fff !important;
+  border: 0px !important;
+  display: flex;
+  justify-content: space-between;
+}
+
+.card-body,.user-body{
+  text-align: center;
+}
+
+.card{
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.2);
+  transition: 0.3s;
+  height: 100%;
+}
+
+/* Card Styling Ends */
+
+/* Styling Graph */
+.charts{
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.graphs{
+  width: 30%;
+}
+
+/* media query for mobile devices and tablets */
+
+@media screen and (max-width : 900px){
+  .sidebar{
+    display: none;
+  }
+
+  .comms{
+    display: none;
+  }
+
+  .round-image{
+    width: 50% !important;
+  }
+
+  .main_content{
+    margin-left: 0px !important;
+  }
+}
+/* media query ends */
+
+
+/* Sidebar styling */
+.side-contents{
+  text-align: left;
+  padding : 10px
+}
+
+.side-text{
+  color: #fff !important;
+}
+
+.active{
+    background-color: #18121f;
+    border-left: 3px solid #4681b8;
+}
+
+/* Some text styling */
+.user-name{
+  border: 1px solid #808080;
+  padding : 10px;
+  border-radius: 5px;
+}
+
+.list-head{
+  background-color : #cfe6f0
+}
+
+
+.col-md-12{
+  padding: 10px;
+}
+
+/* Search textbox styling */
+.message{
+  width: 50%;
+  border-radius: 10px;
+  border : 1px solid #ccc;
+  padding: 5px;
+  resize : none;
+}
+
+.message:focus{
+  outline: none;
+}
+/* Search texbox styling ends */
+
+
+
+
+.center-note{
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  color: white;
+  font-weight: bold;
+  font-size: 33px;
+}
+
+/* Search input field styling */
+
+.search-field{
+    border: 0px;
+    outline: none;
+    padding-left: 10px;
+}
+
+.search-field:focus{
+    outline: none;
+}
+
+/* Search input field styling ends */
+
+/* Styling social media icons */
+.social-media{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  padding: 5px 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.social-icons{
+  color: #ccc;
+  font-size: 18px;
+}
+/* Social media icon styling ends */
+
+/* Some buttons styling */
+.overview-btn{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.funds-btn{
+  padding: 10px;
+  border-radius: 10px;
+  background-color: #6f3beb;
+  border: 0px;
+}
+
+/* Button styling ends */
+
+/* Some div styles */
+.users-div{
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 20px;
+  color: gray;
+}
+
+.users-list-div{
+  display: flex;
+  margin: 0px 20px;
+  margin-bottom: 10px;
+  color: gray;
+}
+
+.encloser{
+  display: grid;
+  justify-content: space-between;
+}
+
+/* Div styling ends */
+
+/* User image round stylimg */
+.round-image-user{
+  border-radius: 50%;
+  width: 15vh;
+  height: 15vh;
+}
+
+/* Styling som text */
+.small-state{
+  font-size: 12px;
+}
+
+/* Styling Icon */
+.fa-plus-circle{
+
+  color: #3f0975;
+}
+
+/* Search icon style */
+.search-icon-style{
+    margin-left: 20px;
+}
+
+/* Styling Round image */
+.round-image{
+    border-radius: 50%;
+    width: 20%;
+}
+
+.round-image-dash{
+  border-radius: 50%;
+  width: 30%;
+}
+
+/* Styling Drawer class */
+
+.drawer-class{
+    display: flex;
+    padding: 10px;
+}
+
+/* Styling Header */
+.header{
+    top: 0;
+    display: flex;
+    justify-content: space-between !important;
+}
